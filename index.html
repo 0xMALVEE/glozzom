@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Glozzom</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <style>
+    div#get-started{
+      background:url("./img/lights.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    div.getstarted-overlay{
+      background:rgba(0,0,0,0.7);
+    }
+    div#what-we-do{
+      background:url("./img/media.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    div.overlay-do{
+      background:rgba(0, 0, 0, 0.7);
+    }
+    .carousel-item{
+      height: 450px;
+    }
+    .carousel-img-1{
+      background:url("./img/image1.jpg");
+    }
+    .carousel-img-2{
+      background:url("./img/image2.jpg");
+    }
+    .carousel-img-3{
+      background:url("./img/image3.jpg");
+    }
+    @media (max-width:600px){
+      img.img-responsive{
+        width:300px;
+        height: auto;
+        margin-top:20px;
+      }
+      div#laptop{
+        padding:0;
+      }
+      div#laptop .row{
+        padding:0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar For the website -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Glozzom</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item text-uppercase mr-3">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item text-uppercase mr-3">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item text-uppercase mr-3">
+              <a class="nav-link " href="#">
+                Servicies
+              </a>
+            </li>
+            <li class="nav-item text-uppercase mr-3">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item text-uppercase mr-3">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Showcase slider -->
+
+  <div id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-img-1 active">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Heading one</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde commodi, non amet saepe,
+                ipsa nostrum soluta, labore minima deserunt incidunt eos laborum.</p>
+              <a href="#" class="btn btn-danger btn-lg">Signup Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-img-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="display-3">Heading two</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde commodi, non amet saepe,
+                ipsa nostrum soluta, labore minima deserunt incidunt eos laborum.</p>
+              <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-img-3">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Heading three</h1>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde commodi, non amet saepe,
+                ipsa nostrum soluta, labore minima deserunt incidunt eos laborum.</p>
+              <a href="#" class="btn btn-danger btn-lg">Signup Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev"><span class="carousel-control-prev-icon"></span></a>
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next"><span class="carousel-control-next-icon"></span></a>
+    </div>
+  </div>
+
+  <!-- Home ICONS -->
+  <div id="home-icons">
+    <div class="container">
+      <div class="row p-4 text-center mt-4 mb-4">
+        <div class="col-md-4">
+          <i class="fas fa-cog fa-3x mb-2"></i>
+          <h3>Turning Gears</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, mollitia.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-cloud fa-3x mb-2"></i>
+          <h3>Sending Data</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, mollitia.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-cart-plus fa-3x mb-2"></i>
+          <h3>Making Money</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, mollitia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Get Started Sections -->
+  <div id="get-started" class="mt-4">
+    <div class="getstarted-overlay">
+      <div class="container text-center text-light p-4">
+        <h1>Are You Ready To Get Started?</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque illum quas non dicta. Fuga neque ab placeat
+          dignissimos itaque laborum molestiae laboriosam, explicabo maiores soluta officia ipsum repellat, porro quod.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Laptop -->
+  <div id="laptop">
+    <div class="container">
+      <div class="row p-4">
+        <div class="col-lg-6 align-self-center">
+          <h1>Lorem Ipsum</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus voluptatum quasi autem vel non error!</p>
+          <a href="#" class="btn btn-outline-danger btn-lg">Learn More</a>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-responsive" src="./img/laptop.png" width="450" height="auto">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What we do -->
+  <div id="what-we-do">
+    <div class="overlay-do p-4">
+      <div class="container text-center text-light">
+        <a class="text-light" href="#"><i class="fas fa-play fa-3x"></i></a>
+        <h1>See What We Do</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Photo Grid -->
+  <div id="grid">
+    <div class="container mt-4 text-center">
+      <h1>Photo Gallery</h1>
+      <p>Check Out Our Photo</p>
+      <div class="row">
+        <div class="col-md-4">
+          <a href=""><img class="img-fluid mt-3" src="https://news.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.ngsversion.1526587209178.adapt.1900.1.jpg"></a>
+        </div>
+        <div class="col-md-4">
+          <a href=""><img class="img-fluid mt-3" src="https://news.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.ngsversion.1526587209178.adapt.1900.1.jpg"></a>
+        </div>
+        <div class="col-md-4">
+          <a href=""><img class="img-fluid mt-3" src="https://news.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.ngsversion.1526587209178.adapt.1900.1.jpg"></a>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <a href=""><img class="img-fluid mt-3" src="https://news.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.ngsversion.1526587209178.adapt.1900.1.jpg"></a>
+        </div>
+        <div class="col-md-4">
+          <a href=""><img class="img-fluid mt-3" src="https://news.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.ngsversion.1526587209178.adapt.1900.1.jpg"></a>
+        </div>
+        <div class="col-md-4">
+          <a href=""><img class="img-fluid mt-3" src="https://news.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.ngsversion.1526587209178.adapt.1900.1.jpg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Singup form -->
+
+  <div id="signup" class="bg-dark py-4 mt-4">
+    <div class="container text-light text-center">
+      <h1>Sign Up For Our Newsletter</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore voluptatem nemo provident, veniam ipsa cum?</p>
+      <div class="form-inline justify-content-center">
+        <input type="text" class="form-control mt-3" placeholder="Enter Email">  
+        <input type="text" class="form-control mx-3 mt-3" placeholder="Enter Name">  
+        <a href="#" class="btn btn-primary mt-3">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
